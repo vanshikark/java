@@ -2,11 +2,18 @@ public class swap {
     public static void main(String[] args){
          int a =5;
         int y=10;
-        a=a+y;
-        y=a-y;
-        a=a-y;
-        System.out.println(a);
-        System.out.println(y);
+        int temp=a;
+        a=y;
+        y=temp;
+       System.out.println("a="+a+" y="+y);
+
+       int b =5;
+       int c=10;
+       b=b+c;
+       c=b-c;
+       b=b-c;
+      System.out.println(b);
+      System.out.println(c);
 
     }
     
