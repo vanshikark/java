@@ -1,6 +1,6 @@
 public class name {
     public static void main(String[] args){
-        int age=19;
+        int age=18;
         String name ="VANSHIKA";
 
         

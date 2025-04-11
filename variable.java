@@ -5,6 +5,7 @@ public class variable {
         b=90;
         float c,d;
         c=98.8f;
+        
         d=89.76f;
 float e=a+b+c+d;
 System.out.println(e);
