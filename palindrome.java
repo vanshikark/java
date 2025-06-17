@@ -1,24 +1,19 @@
-public class palindrome {
+public class palindrome{
+    static void palin(int n){
+        int rev = 0;
+        int b=n;
+      while(n>0){
+        int num = n%10;
+         rev = rev*10+num;
+         n/=10;
+      }
+      if(rev==b){
+        System.out.println("palindrome");
+      }else
+      System.out.println("not palindrome");
+    }
+
     public static void main(String[] args) {
-        int a=859;
-        int variable=a;
-        int rev=0;
-        while(a>0)
-        {
-          int digit=a%10;
-          rev=rev*10+digit;
-          a=a/10;
-
-        }
-        if(variable==rev) {
-
-        
-        System.out.println("P"); }
-        else
-        {
-            System.out.println("N");
-        }
+        palin(151);
     }
-    }
-    
-
+}

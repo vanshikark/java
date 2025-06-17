@@ -1,13 +1,9 @@
-public class variable {
-    public static void main(String[] args){
-        int a,b;
-        a=98;
-        b=90;
-        float c,d;
-        c=98.8f;
-        
-        d=89.76f;
-float e=a+b+c+d;
-System.out.println(e);
+class variable{
+  static int a = 2;
+  int b =6;
+    public static void main(String[] args) {
+        variable obj = new variable();
+        System.out.println(obj.b);
+        System.out.println(variable.a);
     }
 }

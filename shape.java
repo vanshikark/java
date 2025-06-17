@@ -1,28 +1,17 @@
-class Person1 {
-    void displayname()
-    {
-        System.out.println("name");
-    }
-    
-}
-class Student extends Person1{
-    void displayclass()
-    {
-        System.out.println("class");
+class shapes{
+    void draw(){
+        System.out.println("draw shape");
     }
 }
-class Monitor extends Student{
-    void checkdiscipline()
-    {
-        System.out.println("discipline");
+class circle extends shapes{
+    void calculateArea(){
+    System.out.println("area...");
     }
 }
-class Person{
+class Shape{
     public static void main(String[] args) {
-        Monitor obj = new Monitor();
-        obj.displayname();
-        obj.displayclass();
-        obj.checkdiscipline();
-
-    }
+        circle c =new circle();
+        c.calculateArea();
+        c.draw();
+}
 }

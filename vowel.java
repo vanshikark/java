@@ -1,14 +1,13 @@
-public class vowel {
+public class vowel{
     public static void main(String[] args) {
-        char ch='c';
-        if(ch=='a'|| ch=='e' || ch=='i' || ch=='o' || ch=='u')
-        {
-            System.out.println("it is a vowel");
+        String s = "racecarh";
+        int vowel = 0;
+
+        for (int i = 0; i < s.length(); i++){
+            if(s.charAt(i)=='a' || s.charAt(i)=='e' ||s.charAt(i)=='i' || s.charAt(i)=='o' || s.charAt(i)=='u'){
+            vowel++;
+            }
         }
-        else
-        {
-            System.out.println("it is a consonent");
+          System.out.println(vowel);  
         }
-    }
-    
 }

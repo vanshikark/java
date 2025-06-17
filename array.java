@@ -1,16 +1,17 @@
-public class array {
+import java.util.Arrays;
+
+public class Array{
     public static void main(String[] args) {
-        int [] arr={1,2,3,4,5};
-        int [] arr2={4,5,6,7,8};
-        
-        int[] m=new int[arr.length+arr2.length];
-        for(int i=0;i<arr.length;i++){
-            m[i]=arr[i];
+      //  int age =19;
+        int[] marks = new int[3];
+       marks[1]=89;
+       marks[0] = 97;
+       marks[2] = 93;
+
+        for (int i = 0; i < marks.length; i++) {
+          System.out.println(marks[i]);
         }
-        for(int j=0;j<arr2.length;j++){
-            m[arr.length+j]=arr2[j];
-        }
-      System.out.println(m);
-    
-    }
+        Arrays.sort(marks);
+        System.out.println(marks[0]);
+            }    
 }
